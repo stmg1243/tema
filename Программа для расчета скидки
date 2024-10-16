@@ -1,0 +1,11 @@
+# Ввод суммы заказа
+order_amount = float(input("Введите сумму заказа: "))
+
+# Проверка, превышает ли сумма заказа 1000
+if order_amount > 1000:
+    discount = order_amount * 0.10  # Расчет скидки 10%
+    final_amount = order_amount - discount
+    print(f"Ваша скидка: {discount:.2f} рублей.")
+    print(f"Итоговая сумма с учетом скидки: {final_amount:.2f} рублей.")
+else:
+    print(f"Сумма заказа: {order_amount:.2f} рублей. Скидка не предоставляется.")
